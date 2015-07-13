@@ -15,7 +15,10 @@ public class Main {
         ParseTree tree = parser.program();              // String representation of tree starting from root node
 		
         PL0Interpreter interpreter = new PL0Interpreter();
-        interpreter.visit(tree);
+        //interpreter.visit(tree);
+        
+        PL0CppCompiler compiler = new PL0CppCompiler();
+        compiler.visit(tree);
 	}
 
 }
