@@ -1,0 +1,27 @@
+const pi = 3, ash = 9;
+var i, b;
+
+procedure mike;
+begin
+	! ash
+end;
+
+
+begin
+	i := 4/2*2/4;    { assigns 1 to i }
+	! i;
+	
+	b := -2 * (4+3); { assigns -14 to b }
+	if i+10 > 40 then 
+		! b;
+	b := pi - 2;
+	while b < 3 do
+	begin
+		! b;
+		b := b + 1
+	end;
+	! pi;
+	
+	call mike;
+	call mike
+end.

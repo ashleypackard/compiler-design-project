@@ -1,0 +1,17 @@
+var
+  i,                   { loop counter }
+  result;              { result of cube operation }
+
+procedure cube;
+  result := i * i * i;
+
+{ main program }
+begin
+  i := 1;
+  while i < 10 do
+    begin
+      call cube;
+      ! result;        { "!" means "print" }
+      i := (i + 1)
+    end
+end.
