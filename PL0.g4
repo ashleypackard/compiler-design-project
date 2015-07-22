@@ -30,8 +30,7 @@ statement
   ;
 
 condition
-  : ODD expression
-  | expression op=(EQ|LT|LTE|GT|GTE) expression
+  : expression op=(EQ|LT|LTE|GT|GTE) expression
   ;
 
 expression
