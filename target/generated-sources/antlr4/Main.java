@@ -14,11 +14,17 @@ public class Main {
         PL0Parser parser = new PL0Parser(tokens);
         ParseTree tree = parser.program();              // String representation of tree starting from root node
 		
-        PL0Interpreter interpreter = new PL0Interpreter();
+        // Interpreter
+        //PL0Interpreter interpreter = new PL0Interpreter();
         //interpreter.visit(tree);
         
+        // C++ Compiler
         PL0CppCompiler compiler = new PL0CppCompiler();
         compiler.visit(tree);
+        
+        // Java Compiler
+        PL0JavaCompiler javaCompiler = new PL0JavaCompiler();
+        javaCompiler.visit(tree);
 	}
 
 }
